@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { Seo } from './seo.js';
 
+import '../styles/global.css';
+
 export default function Layout({
   children,
   title = false,
