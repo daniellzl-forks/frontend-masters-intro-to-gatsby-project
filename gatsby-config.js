@@ -22,7 +22,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -34,6 +33,20 @@ module.exports = {
       resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/posts/`,
+      },
+    },
+    'gatsby-remark-images',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
     {
