@@ -1,0 +1,11 @@
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the [data-gatsby-image-wrapper] selector lets us target Gatsby's automatically generated image wrapper div */
+.image-wrapper [data-gatsby-image-wrapper] {
+  border: 3px solid var(--black);
+  border-radius: 50%;
+}
